@@ -1,0 +1,29 @@
+{
+    "name": "tapfiliate/laravel",
+    "autoload": {
+        "psr-4": {
+            "Tapfiliate\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tapfiliate\\Laravel\\TapfiliateServiceProvider"
+            ],
+            "aliases": {
+                "CustomersFacade": "Tapfiliate\\Laravel\\Facades\\CustomersHandlerFacade",
+                "ConversionsFacade": "Tapfiliate\\Laravel\\Facades\\ConversionsHandlerFacade",
+                "ClicksFacade": "Tapfiliate\\Laravel\\Facades\\ClicksHandlerFacade"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexey Timchenko",
+            "email": "a.timchenko@admitad.com"
+        }
+    ],
+    "require": {
+        "tapfiliate/api": "*"
+    }
+}
